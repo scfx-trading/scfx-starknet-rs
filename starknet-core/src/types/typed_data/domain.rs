@@ -13,10 +13,7 @@ use super::{revision::Revision, shortstring};
 /// starknet_keccak("StarkNetDomain(name:felt,version:felt,chainId:felt)")
 /// ```
 const DOMAIN_TYPE_HASH_V0: Felt = Felt::from_raw([
-    454097714883350422,
-    18110465409072164514,
-    49961291536018317,
-    11250613311408382492,
+    102729178317579772, 12475911979486037855, 7651820946531917120, 11650136103244249931
 ]);
 
 /// SNIP-12 type hash of the domain type of revision 1.
@@ -59,8 +56,8 @@ impl Domain {
             Revision::V0 => compute_hash_on_elements(&[
                 DOMAIN_TYPE_HASH_V0,
                 self.name,
-                self.version,
                 self.chain_id,
+                self.version,
             ]),
             Revision::V1 => poseidon_hash_many(&[
                 DOMAIN_TYPE_HASH_V1,

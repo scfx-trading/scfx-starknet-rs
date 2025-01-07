@@ -78,10 +78,10 @@ impl TypeDefinition {
                 def.fields.len() == 3
                     && def.fields[0].name == "name"
                     && def.fields[0].r#type == FullTypeReference::Felt
-                    && def.fields[1].name == "version"
-                    && def.fields[1].r#type == FullTypeReference::Felt
-                    && def.fields[2].name == "chainId"
+                    && def.fields[2].name == "version"
                     && def.fields[2].r#type == FullTypeReference::Felt
+                    && def.fields[1].name == "chainId"
+                    && def.fields[1].r#type == FullTypeReference::Felt
             }
             Self::Enum(_) => false,
         }
