@@ -1,5 +1,5 @@
 use starknet_accounts::{Account, AccountError, ConnectedAccount, ExecutionV1, ExecutionV3};
-use starknet_core::{
+use scfx_starknet_core::{
     types::{Call, FeeEstimate, Felt, InvokeTransactionResult, SimulatedTransaction},
     utils::{get_udc_deployed_address, UdcUniqueSettings, UdcUniqueness},
 };
@@ -393,7 +393,7 @@ impl<'f, A> From<&DeploymentV3<'f, A>> for ExecutionV3<'f, A> {
 #[cfg(test)]
 mod tests {
     use starknet_accounts::{ExecutionEncoding, SingleOwnerAccount};
-    use starknet_core::chain_id;
+    use scfx_starknet_core::chain_id;
     use starknet_providers::SequencerGatewayProvider;
     use starknet_signers::{LocalWallet, SigningKey};
 

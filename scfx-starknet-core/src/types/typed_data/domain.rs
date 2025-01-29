@@ -1,5 +1,5 @@
 use serde::Deserialize;
-use starknet_crypto::poseidon_hash_many;
+use scfx_starknet_crypto::poseidon_hash_many;
 
 use crate::{crypto::compute_hash_on_elements, types::Felt};
 

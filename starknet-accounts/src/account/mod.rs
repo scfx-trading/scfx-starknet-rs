@@ -1,6 +1,6 @@
 use async_trait::async_trait;
 use auto_impl::auto_impl;
-use starknet_core::types::{
+use scfx_starknet_core::types::{
     contract::{legacy::LegacyContractClass, CompressProgramError, ComputeClassHashError},
     BlockId, BlockTag, Call, Felt, FlattenedSierraClass,
 };
@@ -119,7 +119,7 @@ pub trait Account: ExecutionEncoder + Sized {
     /// `starknet-sierra-compile` command from the Cairo toolchain, or programmatically through the
     /// Cairo crates.
     ///
-    /// Hashing the resulting CASM class is supported in the `starknet-core` crate. It can also be
+    /// Hashing the resulting CASM class is supported in the `scfx-starknet-core` crate. It can also be
     /// done interactively via Starkli with its `starkli class-hash` command.
     ///
     /// This method is only used for declaring Sierra (Cairo 1) classes. To declare legacy (Cairo 0)
@@ -142,7 +142,7 @@ pub trait Account: ExecutionEncoder + Sized {
     /// `starknet-sierra-compile` command from the Cairo toolchain, or programmatically through the
     /// Cairo crates.
     ///
-    /// Hashing the resulting CASM class is supported in the `starknet-core` crate. It can also be
+    /// Hashing the resulting CASM class is supported in the `scfx-starknet-core` crate. It can also be
     /// done interactively via Starkli with its `starkli class-hash` command.
     ///
     /// This method is only used for declaring Sierra (Cairo 1) classes. To declare legacy (Cairo 0)
@@ -165,7 +165,7 @@ pub trait Account: ExecutionEncoder + Sized {
     /// `starknet-sierra-compile` command from the Cairo toolchain, or programmatically through the
     /// Cairo crates.
     ///
-    /// Hashing the resulting CASM class is supported in the `starknet-core` crate. It can also be
+    /// Hashing the resulting CASM class is supported in the `scfx-starknet-core` crate. It can also be
     /// done interactively via Starkli with its `starkli class-hash` command.
     ///
     /// This method is only used for declaring Sierra (Cairo 1) classes. To declare legacy (Cairo 0)

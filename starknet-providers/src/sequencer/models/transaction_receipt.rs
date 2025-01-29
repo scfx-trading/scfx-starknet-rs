@@ -1,7 +1,7 @@
 use serde::Deserialize;
 use serde_with::serde_as;
 
-use starknet_core::{
+use scfx_starknet_core::{
     serde::unsigned_field_element::{UfeHex, UfePendingBlockHash},
     types::{DataAvailabilityResources, Felt},
 };

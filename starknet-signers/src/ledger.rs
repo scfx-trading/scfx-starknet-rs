@@ -6,7 +6,7 @@ use coins_ledger::{
 };
 use crypto_bigint::{ArrayEncoding, U256};
 use semver::Version;
-use starknet_core::{crypto::Signature, types::Felt};
+use scfx_starknet_core::{crypto::Signature, types::Felt};
 
 use crate::{Signer, SignerInteractivityContext, VerifyingKey};
 

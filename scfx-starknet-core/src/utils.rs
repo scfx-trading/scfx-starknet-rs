@@ -3,7 +3,7 @@ use alloc::string::*;
 use crate::crypto::compute_hash_on_elements;
 
 use sha3::{Digest, Keccak256};
-use starknet_crypto::pedersen_hash;
+use scfx_starknet_crypto::pedersen_hash;
 use starknet_types_core::felt::Felt;
 use starknet_types_core::felt::NonZeroFelt;
 

@@ -1,4 +1,4 @@
-//! Procedural derive macros for the `starknet-core` crate.
+//! Procedural derive macros for the `scfx-starknet-core` crate.
 
 #![deny(missing_docs)]
 
@@ -317,7 +317,7 @@ pub fn derive_decode(input: TokenStream) -> TokenStream {
     .into()
 }
 
-/// Determines the path to the `starknet-core` crate root.
+/// Determines the path to the `scfx-starknet-core` crate root.
 fn derive_core_path(input: &DeriveInput) -> proc_macro2::TokenStream {
     let mut attr_args = Args::default();
 
@@ -343,11 +343,11 @@ fn derive_core_path(input: &DeriveInput) -> proc_macro2::TokenStream {
         || {
             #[cfg(not(feature = "import_from_starknet"))]
             quote! {
-                ::starknet_core
+                ::scfx_starknet_core
             }
 
             // This feature is enabled by the `starknet` crate. When using `starknet` it's assumed
-            // that users would not have imported `starknet-core` directly.
+            // that users would not have imported `scfx-starknet-core` directly.
             #[cfg(feature = "import_from_starknet")]
             quote! {
                 ::starknet::core

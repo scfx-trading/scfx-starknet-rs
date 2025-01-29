@@ -5,7 +5,7 @@ use reqwest::{Client, Error as ReqwestError, StatusCode};
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 use serde_json::Error as SerdeJsonError;
 use serde_with::serde_as;
-use starknet_core::{
+use scfx_starknet_core::{
     chain_id,
     serde::unsigned_field_element::UfeHex,
     types::{contract::CompiledClass, Felt, StarknetError},

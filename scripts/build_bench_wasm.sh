@@ -15,7 +15,7 @@ REPO_ROOT=$( dirname -- $SCRIPT_DIR )
 rm -rf $REPO_ROOT/target/bench-wasm
 mkdir -p $REPO_ROOT/target/bench-wasm
 
-cd $REPO_ROOT/starknet-core
+cd $REPO_ROOT/scfx-starknet-core
 benches=(
   cairo0_class_hash
   sierra_class_hash

@@ -1,7 +1,7 @@
 use starknet_accounts::{
     Account, AccountError, ConnectedAccount, ExecutionEncoding, SingleOwnerAccount,
 };
-use starknet_core::{
+use scfx_starknet_core::{
     types::{
         contract::{
             legacy::{LegacyContractClass, RawLegacyAbiEntry, RawLegacyFunction},

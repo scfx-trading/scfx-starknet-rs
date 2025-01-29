@@ -1,4 +1,4 @@
-use starknet_core::{
+use scfx_starknet_core::{
     types::{
         requests::{CallRequest, GetBlockTransactionCountRequest},
         BlockId, BlockTag, BroadcastedInvokeTransaction, BroadcastedInvokeTransactionV1,

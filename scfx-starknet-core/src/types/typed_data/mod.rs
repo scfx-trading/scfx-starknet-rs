@@ -2,7 +2,7 @@ use alloc::{borrow::ToOwned, format, vec::*};
 use core::str::FromStr;
 
 use serde::Deserialize;
-use starknet_crypto::{PedersenHasher, PoseidonHasher};
+use scfx_starknet_crypto::{PedersenHasher, PoseidonHasher};
 
 use crate::{
     codec::Encode,

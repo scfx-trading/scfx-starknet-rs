@@ -46,7 +46,7 @@
 
 #[doc = include_str!("../assets/CORE_README.md")]
 pub mod core {
-    pub use starknet_core::*;
+    pub use scfx_starknet_core::*;
 }
 
 #[doc = include_str!("../assets/PROVIDERS_README.md")]

@@ -1,7 +1,7 @@
 use rand::{rngs::StdRng, RngCore, SeedableRng};
 use starknet_accounts::{ExecutionEncoding, SingleOwnerAccount};
 use starknet_contract::ContractFactory;
-use starknet_core::types::{contract::legacy::LegacyContractClass, BlockId, BlockTag, Felt};
+use scfx_starknet_core::types::{contract::legacy::LegacyContractClass, BlockId, BlockTag, Felt};
 use starknet_providers::{jsonrpc::HttpTransport, JsonRpcClient};
 use starknet_signers::{LocalWallet, SigningKey};
 use url::Url;

@@ -1,7 +1,7 @@
 use async_trait::async_trait;
 use auto_impl::auto_impl;
 use serde::Serialize;
-use starknet_core::types::{
+use scfx_starknet_core::types::{
     requests::*, BlockHashAndNumber, BlockId, BroadcastedDeclareTransaction,
     BroadcastedDeployAccountTransaction, BroadcastedInvokeTransaction, BroadcastedTransaction,
     ContractClass, DeclareTransactionResult, DeployAccountTransactionResult, EventFilter,

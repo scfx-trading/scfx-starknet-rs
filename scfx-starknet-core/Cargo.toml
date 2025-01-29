@@ -1,5 +1,5 @@
 [package]
-name = "starknet-core"
+name = "scfx-starknet-core"
 version = "0.12.0"
 authors = ["Harry Davis <harry@scfxtrading.com>"]
 license = "MIT OR Apache-2.0"
@@ -38,7 +38,7 @@ starknet-types-core = { version = "0.1.6", default-features = false, features = 
 bincode = "1.3.3"
 criterion = { version = "0.4.0", default-features = false }
 hex-literal = "0.4.1"
-starknet-core = { path = ".", features = ["no_unknown_fields"] }
+scfx-starknet-core = { path = ".", features = ["no_unknown_fields"] }
 
 [target.'cfg(target_arch = "wasm32")'.dev-dependencies]
 wasm-bindgen-test = "0.3.34"

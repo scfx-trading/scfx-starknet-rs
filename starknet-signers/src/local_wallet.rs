@@ -1,7 +1,7 @@
 use crate::{Infallible, Signer, SignerInteractivityContext, SigningKey, VerifyingKey};
 
 use async_trait::async_trait;
-use starknet_core::{
+use scfx_starknet_core::{
     crypto::{EcdsaSignError, Signature},
     types::Felt,
 };

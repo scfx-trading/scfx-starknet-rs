@@ -44,7 +44,7 @@ starknet = { git = "https://github.com/xJonathanLEI/starknet-rs" }
 This workspace contains the following crates:
 
 - `starknet`: Re-export of other sub-crates (recommended)
-- `starknet-core`: Core data structures for interacting with Starknet
+- `scfx-starknet-core`: Core data structures for interacting with Starknet
 - `starknet-providers`: Abstraction and implementation of clients for interacting with Starknet nodes and sequencers
 - `starknet-contract`: Types for deploying and interacting with Starknet smart contracts
 - `scfx-starknet-crypto`: **Low-level** cryptography utilities for Starknet
@@ -52,7 +52,7 @@ This workspace contains the following crates:
 - `starknet-accounts`: Types for handling Starknet account abstraction
 - `starknet-curve`: Starknet curve operations
 - `starknet-macros`: Useful macros for using the `starknet` crates
-- `starknet-core-derive`: Derive macros for traits in `starknet-core`
+- `starknet-core-derive`: Derive macros for traits in `scfx-starknet-core`
 
 ## WebAssembly
 
@@ -66,7 +66,7 @@ This workspace contains the following crates:
 
 Benchmark results for native and WebAssembly targets are available for these crates:
 
-- [starknet-core](./starknet-core/)
+- [scfx-starknet-core](./scfx-starknet-core/)
 - [scfx-starknet-crypto](./scfx-starknet-crypto/)
 
 For instructions on running the benchmark yourself, check [here](./BENCHMARK.md).

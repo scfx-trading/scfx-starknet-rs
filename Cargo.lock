@@ -1495,9 +1495,9 @@ checksum = "6877bb514081ee2a7ff5ef9de3281f14a4dd4bceac4c09388074a6b5df8a139a"
 
 [[package]]
 name = "minicov"
-version = "0.3.5"
+version = "0.3.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5c71e683cd655513b99affab7d317deb690528255a0d5f717f1024093c12b169"
+checksum = "f27fe9f1cc3c22e1687f9446c2083c4c5fc7f0bcf1c7a86bdbded14985895b4b"
 dependencies = [
  "cc",
  "walkdir",
@@ -2014,6 +2014,49 @@ dependencies = [
 ]
 
 [[package]]
+name = "scfx-starknet"
+version = "0.12.0"
+dependencies = [
+ "scfx-starknet-core",
+ "scfx-starknet-crypto",
+ "serde_json",
+ "starknet-accounts",
+ "starknet-contract",
+ "starknet-core-derive",
+ "starknet-macros",
+ "starknet-providers",
+ "starknet-signers",
+ "tokio",
+ "url",
+]
+
+[[package]]
+name = "scfx-starknet-core"
+version = "0.12.0"
+dependencies = [
+ "base64 0.21.7",
+ "bincode",
+ "criterion",
+ "crypto-bigint",
+ "flate2",
+ "foldhash",
+ "hex",
+ "hex-literal",
+ "indexmap 2.7.1",
+ "num-traits",
+ "scfx-starknet-core",
+ "scfx-starknet-crypto",
+ "serde",
+ "serde_json",
+ "serde_json_pythonic",
+ "serde_with",
+ "sha3",
+ "starknet-core-derive",
+ "starknet-types-core",
+ "wasm-bindgen-test",
+]
+
+[[package]]
 name = "scfx-starknet-crypto"
 version = "0.7.3"
 dependencies = [
@@ -2034,12 +2077,6 @@ dependencies = [
  "wasm-bindgen-test",
  "zeroize",
 ]
-
-[[package]]
-name = "scoped-tls"
-version = "1.0.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e1cf6437eb19a8f4a6cc0f7dca544973b0b78843adbfeb3683d1a94a0024a294"
 
 [[package]]
 name = "scopeguard"
@@ -2274,32 +2311,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a8f112729512f8e442d81f95a8a7ddf2b7c6b8a1a6f509a95864142b30cab2d3"
 
 [[package]]
-name = "starknet"
-version = "0.12.0"
-dependencies = [
- "scfx-starknet-crypto",
- "serde_json",
- "starknet-accounts",
- "starknet-contract",
- "starknet-core",
- "starknet-core-derive",
- "starknet-macros",
- "starknet-providers",
- "starknet-signers",
- "tokio",
- "url",
-]
-
-[[package]]
 name = "starknet-accounts"
 version = "0.11.0"
 dependencies = [
  "async-trait",
  "auto_impl",
+ "scfx-starknet-core",
  "scfx-starknet-crypto",
  "serde",
  "serde_json",
- "starknet-core",
  "starknet-providers",
  "starknet-signers",
  "thiserror",
@@ -2312,42 +2332,16 @@ name = "starknet-contract"
 version = "0.11.0"
 dependencies = [
  "rand",
+ "scfx-starknet-core",
  "serde",
  "serde_json",
  "serde_with",
  "starknet-accounts",
- "starknet-core",
  "starknet-providers",
  "starknet-signers",
  "thiserror",
  "tokio",
  "url",
-]
-
-[[package]]
-name = "starknet-core"
-version = "0.12.0"
-dependencies = [
- "base64 0.21.7",
- "bincode",
- "criterion",
- "crypto-bigint",
- "flate2",
- "foldhash",
- "hex",
- "hex-literal",
- "indexmap 2.7.1",
- "num-traits",
- "scfx-starknet-crypto",
- "serde",
- "serde_json",
- "serde_json_pythonic",
- "serde_with",
- "sha3",
- "starknet-core",
- "starknet-core-derive",
- "starknet-types-core",
- "wasm-bindgen-test",
 ]
 
 [[package]]
@@ -2372,15 +2366,15 @@ version = "0.1.0"
 dependencies = [
  "cxx",
  "cxx-build",
+ "scfx-starknet-core",
  "scfx-starknet-crypto",
- "starknet-core",
 ]
 
 [[package]]
 name = "starknet-macros"
 version = "0.2.1"
 dependencies = [
- "starknet-core",
+ "scfx-starknet-core",
  "syn",
 ]
 
@@ -2395,10 +2389,10 @@ dependencies = [
  "getrandom",
  "log",
  "reqwest",
+ "scfx-starknet-core",
  "serde",
  "serde_json",
  "serde_with",
- "starknet-core",
  "starknet-providers",
  "thiserror",
  "tokio",
@@ -2417,9 +2411,9 @@ dependencies = [
  "eth-keystore",
  "getrandom",
  "rand",
+ "scfx-starknet-core",
  "scfx-starknet-crypto",
  "semver",
- "starknet-core",
  "thiserror",
  "wasm-bindgen-test",
 ]
@@ -2933,14 +2927,12 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-test"
-version = "0.3.44"
+version = "0.3.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a93d2a9ae98f1af8953f6415397299d808cce0a24f6d7c613d27bd83edf98da8"
+checksum = "66c8d5e33ca3b6d9fa3b4676d774c5778031d27a578c2b007f905acf816152c3"
 dependencies = [
- "console_error_panic_hook",
  "js-sys",
  "minicov",
- "scoped-tls",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "wasm-bindgen-test-macro",
@@ -2948,9 +2940,9 @@ dependencies = [
 
 [[package]]
 name = "wasm-bindgen-test-macro"
-version = "0.3.44"
+version = "0.3.50"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fb8b294691f640bad8f2bb35a11bb28272701b1d687bd5fd661a27684e894d4d"
+checksum = "17d5042cc5fa009658f9a7333ef24291b1291a25b6382dd68862a7f3b969f69b"
 dependencies = [
  "proc-macro2",
  "quote",

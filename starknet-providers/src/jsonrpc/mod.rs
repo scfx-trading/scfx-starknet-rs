@@ -3,7 +3,7 @@ use std::{any::Any, error::Error, fmt::Display};
 use async_trait::async_trait;
 use serde::{de::DeserializeOwned, Deserialize, Serialize};
 use serde_with::serde_as;
-use starknet_core::{
+use scfx_starknet_core::{
     serde::unsigned_field_element::UfeHex,
     types::{
         requests::*, BlockHashAndNumber, BlockId, BroadcastedDeclareTransaction,

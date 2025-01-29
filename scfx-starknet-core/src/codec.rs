@@ -1,6 +1,6 @@
 use alloc::{boxed::Box, fmt::Formatter, format, string::*, vec::*};
 use core::{fmt::Display, mem::MaybeUninit};
-use starknet_crypto::{PedersenHasher, PoseidonHasher};
+use scfx_starknet_crypto::{PedersenHasher, PoseidonHasher};
 
 use num_traits::ToPrimitive;
 
@@ -35,11 +35,11 @@ pub trait FeltWriter {
 /// [`Vec<Felt>`].
 ///
 /// ```rust
-/// use starknet_core::codec::Encode;
-/// # use starknet_core::types::Felt;
+/// use scfx_starknet_core::codec::Encode;
+/// # use scfx_starknet_core::types::Felt;
 ///
 /// #[derive(Encode)]
-/// # #[starknet(core = "starknet_core")]
+/// # #[starknet(core = "scfx_starknet_core")]
 /// struct CairoType {
 ///     a: u32,
 ///     b: Option<bool>,
@@ -70,11 +70,11 @@ pub trait Encode {
 /// [`Vec<Felt>`].
 ///
 /// ```rust
-/// use starknet_core::codec::Decode;
-/// # use starknet_core::types::Felt;
+/// use scfx_starknet_core::codec::Decode;
+/// # use scfx_starknet_core::types::Felt;
 ///
 /// #[derive(Debug, PartialEq, Eq, Decode)]
-/// # #[starknet(core = "starknet_core")]
+/// # #[starknet(core = "scfx_starknet_core")]
 /// struct CairoType {
 ///     a: u32,
 ///     b: Option<bool>,

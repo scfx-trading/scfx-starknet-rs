@@ -1,4 +1,4 @@
-use starknet_crypto::{pedersen_hash, poseidon_hash, PedersenHasher, PoseidonHasher};
+use scfx_starknet_crypto::{pedersen_hash, poseidon_hash, PedersenHasher, PoseidonHasher};
 
 use crate::{codec::FeltWriter, types::Felt};
 

@@ -1,10 +1,10 @@
 use crypto_bigint::{Encoding, NonZero, U256};
 use rand::{rngs::StdRng, Rng, SeedableRng};
-use starknet_core::{
+use scfx_starknet_core::{
     crypto::{ecdsa_sign, ecdsa_verify, EcdsaSignError, EcdsaVerifyError, Signature},
     types::Felt,
 };
-use starknet_crypto::get_public_key;
+use scfx_starknet_crypto::get_public_key;
 
 /// A ECDSA signing (private) key on the STARK curve.
 #[derive(Debug, Clone)]

@@ -1,6 +1,6 @@
-# Procedural macros for `starknet-core`
+# Procedural macros for `scfx-starknet-core`
 
-This crate provides procedural macros for deriving the `Encode` and `Decode` traits from `starknet-core`. This allows defining a type like:
+This crate provides procedural macros for deriving the `Encode` and `Decode` traits from `scfx-starknet-core`. This allows defining a type like:
 
 ```rust
 #[derive(Debug, PartialEq, Eq, Decode, Encode)]

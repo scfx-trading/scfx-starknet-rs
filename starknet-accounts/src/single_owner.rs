@@ -4,7 +4,7 @@ use crate::{
 };
 
 use async_trait::async_trait;
-use starknet_core::types::{contract::ComputeClassHashError, BlockId, BlockTag, Call, Felt};
+use scfx_starknet_core::types::{contract::ComputeClassHashError, BlockId, BlockTag, Call, Felt};
 use starknet_providers::Provider;
 use starknet_signers::{Signer, SignerInteractivityContext};
 

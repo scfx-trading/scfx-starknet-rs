@@ -4,7 +4,7 @@ use super::{
 };
 use crate::ExecutionEncoder;
 
-use starknet_core::{
+use scfx_starknet_core::{
     crypto::compute_hash_on_elements,
     types::{
         BroadcastedInvokeTransaction, BroadcastedInvokeTransactionV1,
@@ -13,7 +13,7 @@ use starknet_core::{
         SimulatedTransaction, SimulationFlag, SimulationFlagForEstimateFee,
     },
 };
-use starknet_crypto::PoseidonHasher;
+use scfx_starknet_crypto::PoseidonHasher;
 use starknet_providers::Provider;
 use starknet_signers::SignerInteractivityContext;
 

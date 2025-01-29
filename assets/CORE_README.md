@@ -1,1 +1,1 @@
-../starknet-core/README.md
+../starknet-accounts/README.md

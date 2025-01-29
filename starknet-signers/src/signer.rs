@@ -2,7 +2,7 @@ use crate::VerifyingKey;
 
 use async_trait::async_trait;
 use auto_impl::auto_impl;
-use starknet_core::{
+use scfx_starknet_core::{
     crypto::Signature,
     types::{Call, Felt},
 };

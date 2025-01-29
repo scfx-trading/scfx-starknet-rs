@@ -3,7 +3,7 @@ use std::io::Write;
 use flate2::{write::GzEncoder, Compression};
 use serde::{Deserialize, Deserializer, Serialize};
 use serde_with::serde_as;
-use starknet_core::{
+use scfx_starknet_core::{
     serde::{byte_array::base64::serialize as base64_ser, unsigned_field_element::UfeHex},
     types::{
         contract::{

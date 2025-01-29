@@ -16,7 +16,7 @@ jobs:
         package:
           - "starknet-curve"
           - "scfx-starknet-crypto"
-          - "starknet-core"
+          - "scfx-starknet-core"
           - "starknet-providers"
           - "starknet-signers"
           - "starknet-accounts"

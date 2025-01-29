@@ -4,7 +4,7 @@ use crate::{
 };
 
 use async_trait::async_trait;
-use starknet_core::{
+use scfx_starknet_core::{
     codec::Encode,
     types::{BlockId, BlockTag, Felt},
 };
@@ -25,7 +25,7 @@ pub struct ArgentAccountFactory<S, P> {
 
 /// Constructor parameters for Argent account v0.4.0.
 #[derive(Encode)]
-#[starknet(core = "starknet_core")]
+#[starknet(core = "scfx_starknet_core")]
 struct ArgentAccountConstructorParams {
     owner: ArgentSigner,
     guardian: Option<ArgentSigner>,
@@ -34,7 +34,7 @@ struct ArgentAccountConstructorParams {
 /// A simplified version of `argent::signer::signer_signature::Signer` that only supports the simple
 /// Starknet signer.
 #[derive(Encode)]
-#[starknet(core = "starknet_core")]
+#[starknet(core = "scfx_starknet_core")]
 enum ArgentSigner {
     Starknet(Felt),
 }

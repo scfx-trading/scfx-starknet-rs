@@ -1,5 +1,5 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use starknet_core::types::contract::legacy::LegacyContractClass;
+use scfx_starknet_core::types::contract::legacy::LegacyContractClass;
 
 pub fn criterion_benchmark(c: &mut Criterion) {
     // Using the latest OZ account contract for the benchmark

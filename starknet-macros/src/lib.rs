@@ -4,7 +4,7 @@
 #![deny(missing_docs)]
 
 use proc_macro::TokenStream;
-use starknet_core::{
+use scfx_starknet_core::{
     types::Felt,
     utils::{cairo_short_string_to_felt, get_selector_from_name},
 };

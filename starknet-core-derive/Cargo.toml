@@ -8,7 +8,7 @@ readme = "README.md"
 repository = "https://github.com/xJonathanLEI/starknet-rs"
 homepage = "https://starknet.rs/"
 description = """
-Procedural macros for `starknet-core`
+Procedural macros for `scfx-starknet-core`
 """
 keywords = ["ethereum", "starknet", "web3"]
 

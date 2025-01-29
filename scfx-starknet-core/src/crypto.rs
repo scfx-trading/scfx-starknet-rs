@@ -1,7 +1,7 @@
 use starknet_types_core::felt::Felt;
 
-pub use starknet_crypto::{pedersen_hash, ExtendedSignature, Signature};
-use starknet_crypto::{rfc6979_generate_k, sign, verify, SignError, VerifyError};
+pub use scfx_starknet_crypto::{pedersen_hash, ExtendedSignature, Signature};
+use scfx_starknet_crypto::{rfc6979_generate_k, sign, verify, SignError, VerifyError};
 
 mod errors {
     use core::fmt::{Display, Formatter, Result};

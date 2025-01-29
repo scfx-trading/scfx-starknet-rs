@@ -13,7 +13,7 @@ Starknet signer implementations
 keywords = ["ethereum", "starknet", "web3"]
 
 [dependencies]
-starknet-core = { version = "0.12.0", path = "../starknet-core" }
+scfx-starknet-core = { version = "0.12.0", path = "../scfx-starknet-core" }
 scfx-starknet-crypto = { version = "0.7.3", path = "../scfx-starknet-crypto" }
 async-trait = "0.1.68"
 auto_impl = "1.0.1"

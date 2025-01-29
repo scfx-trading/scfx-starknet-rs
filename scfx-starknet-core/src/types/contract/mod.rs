@@ -3,7 +3,7 @@ use alloc::{format, string::*, vec::*};
 use serde::{de::Visitor, ser::SerializeSeq, Deserialize, Deserializer, Serialize, Serializer};
 use serde_json_pythonic::to_string_pythonic;
 use serde_with::serde_as;
-use starknet_crypto::{poseidon_hash_many, PoseidonHasher};
+use scfx_starknet_crypto::{poseidon_hash_many, PoseidonHasher};
 
 use crate::{
     serde::unsigned_field_element::UfeHex,

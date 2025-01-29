@@ -102,9 +102,9 @@ jobs:
         run: |
           (cd ./scfx-starknet-crypto && wasm-pack test --release --node)
 
-      - name: Run starknet-core tests
+      - name: Run scfx-starknet-core tests
         run: |
-          (cd ./starknet-core && wasm-pack test --release --node)
+          (cd ./scfx-starknet-core && wasm-pack test --release --node)
 
       - name: Run starknet-signers tests
         run: |
@@ -144,8 +144,8 @@ jobs:
             --no-default-features \
             --features alloc
 
-      - name: Build starknet-core
+      - name: Build scfx-starknet-core
         run: |
-          cargo build --package starknet-core \
+          cargo build --package scfx-starknet-core \
             --target thumbv6m-none-eabi \
             --no-default-features

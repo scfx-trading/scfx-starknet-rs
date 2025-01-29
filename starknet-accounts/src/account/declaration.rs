@@ -4,7 +4,7 @@ use super::{
     RawDeclarationV2, RawDeclarationV3, RawLegacyDeclaration,
 };
 
-use starknet_core::{
+use scfx_starknet_core::{
     crypto::compute_hash_on_elements,
     types::{
         contract::{legacy::LegacyContractClass, ComputeClassHashError},
@@ -15,7 +15,7 @@ use starknet_core::{
         SimulationFlagForEstimateFee,
     },
 };
-use starknet_crypto::PoseidonHasher;
+use scfx_starknet_crypto::PoseidonHasher;
 use starknet_providers::Provider;
 use starknet_signers::SignerInteractivityContext;
 use std::sync::Arc;

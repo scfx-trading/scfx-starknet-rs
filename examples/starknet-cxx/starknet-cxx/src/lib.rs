@@ -13,7 +13,7 @@
 //! create idiomatic bindings, which is way too much work to maintain as an example, and should be
 //! a project of its own.
 
-use starknet_core::{crypto::Signature, types::Felt};
+use scfx_starknet_core::{crypto::Signature, types::Felt};
 
 #[cxx::bridge]
 mod ffi {
@@ -29,7 +29,7 @@ pub fn pedersen_hash(x: &str, y: &str) -> String {
     let x = Felt::from_hex(x).unwrap();
     let y = Felt::from_hex(y).unwrap();
 
-    format!("{:#064x}", starknet_core::crypto::pedersen_hash(&x, &y))
+    format!("{:#064x}", scfx_starknet_core::crypto::pedersen_hash(&x, &y))
 }
 
 fn ecdsa_sign(private_key: &str, message: &str) -> String {
@@ -37,7 +37,7 @@ fn ecdsa_sign(private_key: &str, message: &str) -> String {
     let private_key = Felt::from_hex(private_key).unwrap();
     let message = Felt::from_hex(message).unwrap();
 
-    let signature: Signature = starknet_core::crypto::ecdsa_sign(&private_key, &message)
+    let signature: Signature = scfx_starknet_core::crypto::ecdsa_sign(&private_key, &message)
         // WARNING: no error handling here
         .unwrap()
         .into();

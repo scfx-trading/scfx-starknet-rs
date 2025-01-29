@@ -10,7 +10,7 @@
 - Poseidon hash
 - RFC-6979
 
-> _You're advised to use high-level crypto utilities implemented by the `starknet-core` crate (or use it through the `starknet::core` re-export) if you're not familiar with cryptographic primitives. Using these low-level functions incorrectly could result in leaking your private key, for example._
+> _You're advised to use high-level crypto utilities implemented by the `scfx-starknet-core` crate (or use it through the `starknet::core` re-export) if you're not familiar with cryptographic primitives. Using these low-level functions incorrectly could result in leaking your private key, for example._
 
 > _This library does not provide constant-time guarantees._
 

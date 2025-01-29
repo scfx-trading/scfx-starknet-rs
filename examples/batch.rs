@@ -2,7 +2,7 @@ use starknet::providers::{
     jsonrpc::{HttpTransport, JsonRpcClient},
     Provider, ProviderRequestData, ProviderResponseData, Url,
 };
-use starknet_core::types::{
+use scfx_starknet_core::types::{
     requests::{BlockNumberRequest, GetBlockTransactionCountRequest},
     BlockId,
 };

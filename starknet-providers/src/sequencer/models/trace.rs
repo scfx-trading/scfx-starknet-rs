@@ -1,6 +1,6 @@
 use serde::Deserialize;
 use serde_with::serde_as;
-use starknet_core::{serde::unsigned_field_element::UfeHex, types::Felt};
+use scfx_starknet_core::{serde::unsigned_field_element::UfeHex, types::Felt};
 
 use super::{EntryPointType, ExecutionResources, L1Address};
 

@@ -3,7 +3,7 @@
 use std::any::Any;
 
 use async_trait::async_trait;
-use starknet_core::types::{
+use scfx_starknet_core::types::{
     BlockHashAndNumber, BlockId, BroadcastedDeclareTransaction,
     BroadcastedDeployAccountTransaction, BroadcastedInvokeTransaction, BroadcastedTransaction,
     ContractClass, DeclareTransactionResult, DeployAccountTransactionResult, EventFilter,

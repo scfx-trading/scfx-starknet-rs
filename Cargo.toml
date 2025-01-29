@@ -1,5 +1,5 @@
 [package]
-name = "starknet"
+name = "scfx-starknet"
 version = "0.12.0"
 authors = ["Harry Davis <harry@scfxtrading.com>"]
 license = "MIT OR Apache-2.0"
@@ -16,7 +16,7 @@ exclude = [".github/**", "images/**"]
 
 [workspace]
 members = [
-    "starknet-core",
+    "scfx-starknet-core",
     "starknet-core-derive",
     "starknet-providers",
     "starknet-contract",
@@ -34,7 +34,7 @@ all-features = true
 
 [dependencies]
 scfx-starknet-crypto = { version = "0.7.3", path = "./scfx-starknet-crypto" }
-starknet-core = { version = "0.12.0", path = "./starknet-core", default-features = false }
+scfx-starknet-core = { version = "0.12.0", path = "./scfx-starknet-core", default-features = false }
 starknet-core-derive = { version = "0.1.0", path = "./starknet-core-derive", features = ["import_from_starknet"] }
 starknet-providers = { version = "0.12.0", path = "./starknet-providers" }
 starknet-contract = { version = "0.11.0", path = "./starknet-contract" }
@@ -52,7 +52,7 @@ url = "2.2.2"
 default = []
 ledger = ["starknet-signers/ledger"]
 no_unknown_fields = [
-    "starknet-core/no_unknown_fields",
+    "scfx-starknet-core/no_unknown_fields",
     "starknet-providers/no_unknown_fields",
 ]
 

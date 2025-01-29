@@ -1,10 +1,10 @@
 # Example usage of starknet-rs from C++
 
-This is a quick demo on exposing `starknet-core` to C++ with the [cxx](https://github.com/dtolnay/cxx) bridge and [corrosion](https://github.com/corrosion-rs/corrosion).
+This is a quick demo on exposing `scfx-starknet-core` to C++ with the [cxx](https://github.com/dtolnay/cxx) bridge and [corrosion](https://github.com/corrosion-rs/corrosion).
 
 ## **WARNING**
 
-As noted in the [`scfx-starknet-crypto` page](../../scfx-starknet-crypto/), you're advised to use high-level constructs exposed through `starknet-core` instead if you're not familiar with cryptographic primitives, as we're doing here. However, it's possible to wrap the underlying `scfx-starknet-crypto` crate directly _if you know what you're doing._
+As noted in the [`scfx-starknet-crypto` page](../../scfx-starknet-crypto/), you're advised to use high-level constructs exposed through `scfx-starknet-core` instead if you're not familiar with cryptographic primitives, as we're doing here. However, it's possible to wrap the underlying `scfx-starknet-crypto` crate directly _if you know what you're doing._
 
 ## Note
 
