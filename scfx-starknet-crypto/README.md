@@ -1,6 +1,6 @@
 # Low-level cryptography utilities for Starknet
 
-`starknet-crypto` contains utilities for performing **low-level** cryptographic operations in Starknet:
+`scfx-starknet-crypto` contains utilities for performing **low-level** cryptographic operations in Starknet:
 
 - ECDSA operations
   - Signing hashes
@@ -67,7 +67,7 @@ rfc6979_generate_k      time:   [11.564 µs 11.566 µs 11.569 µs]
 
 ## Binary size optimization
 
-By default, `starknet-crypto` ships with a Pedersen hash implementation utilizing a lookup table for better performance. To optimize for binary size over performance, the crate offers a `pedersen_no_lookup` feature, which uses a vanilla unoptimized implementation instead.
+By default, `scfx-starknet-crypto` ships with a Pedersen hash implementation utilizing a lookup table for better performance. To optimize for binary size over performance, the crate offers a `pedersen_no_lookup` feature, which uses a vanilla unoptimized implementation instead.
 
 > [!WARNING]
 >

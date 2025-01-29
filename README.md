@@ -12,7 +12,7 @@
 
 > _Note that `starknet-rs` is still experimental. Breaking changes will be made before the first stable release. The library is also NOT audited or reviewed for security at the moment. Use at your own risk._
 
-> _The underlying cryptography library [`starknet-crypto`](./starknet-crypto) does NOT provide constant-time guarantees._
+> _The underlying cryptography library [`scfx-starknet-crypto`](./scfx-starknet-crypto) does NOT provide constant-time guarantees._
 
 ## Adding starknet-rs to your project
 
@@ -47,7 +47,7 @@ This workspace contains the following crates:
 - `starknet-core`: Core data structures for interacting with Starknet
 - `starknet-providers`: Abstraction and implementation of clients for interacting with Starknet nodes and sequencers
 - `starknet-contract`: Types for deploying and interacting with Starknet smart contracts
-- `starknet-crypto`: **Low-level** cryptography utilities for Starknet
+- `scfx-starknet-crypto`: **Low-level** cryptography utilities for Starknet
 - `starknet-signers`: Starknet signer implementations
 - `starknet-accounts`: Types for handling Starknet account abstraction
 - `starknet-curve`: Starknet curve operations
@@ -67,7 +67,7 @@ This workspace contains the following crates:
 Benchmark results for native and WebAssembly targets are available for these crates:
 
 - [starknet-core](./starknet-core/)
-- [starknet-crypto](./starknet-crypto/)
+- [scfx-starknet-crypto](./scfx-starknet-crypto/)
 
 For instructions on running the benchmark yourself, check [here](./BENCHMARK.md).
 

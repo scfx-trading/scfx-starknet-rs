@@ -1,0 +1,12 @@
+[build]
+rustflags = ["-C", "target-cpu=native"]
+
+[registries.scfxtrading-scfxtrading]
+index = "sparse+https://scfxtrading-102142247664.d.codeartifact.eu-west-1.amazonaws.com/cargo/scfxtrading/"
+credential-provider = "cargo:token-from-stdout aws codeartifact get-authorization-token --domain scfxtrading --domain-owner 102142247664 --region eu-west-1 --query authorizationToken --output text"
+
+[registry]
+default = "scfxtrading-scfxtrading"
+
+[source.crates-io]
+replace-with = "scfxtrading-scfxtrading"

@@ -1,12 +1,12 @@
 [package]
 name = "starknet"
 version = "0.12.0"
-authors = ["Jonathan LEI <me@xjonathan.dev>"]
+authors = ["Harry Davis <harry@scfxtrading.com>"]
 license = "MIT OR Apache-2.0"
 edition = "2021"
 readme = "README.md"
 documentation = "https://docs.rs/starknet"
-repository = "https://github.com/xJonathanLEI/starknet-rs"
+repository = "https://github.com/scfx-trading/scfx-starknet-rs"
 homepage = "https://starknet.rs/"
 description = """
 Complete Starknet library in Rust™
@@ -20,7 +20,7 @@ members = [
     "starknet-core-derive",
     "starknet-providers",
     "starknet-contract",
-    "starknet-crypto",
+    "scfx-starknet-crypto",
     "starknet-signers",
     "starknet-accounts",
     "starknet-macros",
@@ -33,7 +33,7 @@ members = [
 all-features = true
 
 [dependencies]
-starknet-crypto = { version = "0.7.3", path = "./starknet-crypto" }
+scfx-starknet-crypto = { version = "0.7.3", path = "./scfx-starknet-crypto" }
 starknet-core = { version = "0.12.0", path = "./starknet-core", default-features = false }
 starknet-core-derive = { version = "0.1.0", path = "./starknet-core-derive", features = ["import_from_starknet"] }
 starknet-providers = { version = "0.12.0", path = "./starknet-providers" }

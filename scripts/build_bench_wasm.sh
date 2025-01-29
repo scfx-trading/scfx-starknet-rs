@@ -26,7 +26,7 @@ for bench in ${benches[@]}; do
   generate_wasm $bench
 done
 
-cd $REPO_ROOT/starknet-crypto
+cd $REPO_ROOT/scfx-starknet-crypto
 benches=(
   ecdsa_get_public_key
   ecdsa_recover

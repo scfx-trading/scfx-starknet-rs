@@ -25,9 +25,9 @@ jobs:
           profile: minimal
           override: true
 
-      - name: Test starknet-crypto with pedersen_no_lookup
+      - name: Test scfx-starknet-crypto with pedersen_no_lookup
         run: |
-          cargo test -p starknet-crypto --features pedersen_no_lookup
+          cargo test -p scfx-starknet-crypto --features pedersen_no_lookup
 
       - name: Run cargo tests
         uses: nick-fields/retry@v2
@@ -57,9 +57,9 @@ jobs:
           profile: minimal
           override: true
 
-      - name: Test starknet-crypto with pedersen_no_lookup
+      - name: Test scfx-starknet-crypto with pedersen_no_lookup
         run: |
-          cargo test -p starknet-crypto --features pedersen_no_lookup
+          cargo test -p scfx-starknet-crypto --features pedersen_no_lookup
 
       - name: Run cargo tests
         uses: nick-fields/retry@v2
@@ -98,9 +98,9 @@ jobs:
           command: install
           args: wasm-pack
 
-      - name: Run starknet-crypto tests
+      - name: Run scfx-starknet-crypto tests
         run: |
-          (cd ./starknet-crypto && wasm-pack test --release --node)
+          (cd ./scfx-starknet-crypto && wasm-pack test --release --node)
 
       - name: Run starknet-core tests
         run: |
@@ -133,13 +133,13 @@ jobs:
         run: |
           rustup target add thumbv6m-none-eabi
 
-      - name: Build starknet-crypto
+      - name: Build scfx-starknet-crypto
         run: |
-          cargo build --package starknet-crypto \
+          cargo build --package scfx-starknet-crypto \
             --target thumbv6m-none-eabi \
             --no-default-features
 
-          cargo build --package starknet-crypto \
+          cargo build --package scfx-starknet-crypto \
             --target thumbv6m-none-eabi \
             --no-default-features \
             --features alloc
